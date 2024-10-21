@@ -16,7 +16,6 @@ export const guest = (() => {
         }
 
         const count = (new Date(until)).getTime();
-        console.log(count - (new Date()).getTime())
         let funcCount = setInterval(() => {
             const distance = Math.round(count - (new Date()).getTime());
             if(distance < 1000 ){

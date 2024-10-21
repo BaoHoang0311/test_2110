@@ -813,21 +813,21 @@
 
 
         console.log($(this).scrollTop())
-        if ($(this).scrollTop() > 500 && $(this).scrollTop() <= 1200) {
-            $("#brideImage").addClass("animate__animated animate__fadeInLeft animate__slower 1s animate__repeat-2	2");
-            $("#wifeImage").addClass("animate__animated  animate__fadeInRight animate__slower 1s animate__repeat-2	2");
+        if ($(this).scrollTop() > 300 && $(this).scrollTop() <= 1500) {
+            $("#brideImage").addClass("animate__animated animate__fadeInLeft animate__slower 2s");
+            $("#wifeImage").addClass("animate__animated  animate__fadeInRight animate__slower 2s");
 
-            $("#heartl").addClass("animate__animated animate__fadeInLeft animate__slower 1s");
+            $("#heartl").addClass("animate__animated animate__fadeInLeft animate__slower 1s animate__infinite	infinite");
             $("#heart2").addClass("animate__animated animate__bounce animate__infinite	infinite");
-            $("#heartr").addClass("animate__animated animate__fadeInRight animate__slower 1s");
+            $("#heartr").addClass("animate__animated animate__fadeInRight animate__slower 1s animate__infinite	infinite");
         }
-        else if ($(this).scrollTop() > 1000) {
-            $("#brideImage").removeClass("animate__animated animate__fadeInLeft animate__slower 1s animate__repeat-2	2");
-            $("#wifeImage").removeClass("animate__animated animate__slower 2s animate__fadeInRight animate__slower 1s animate__repeat-2	2");
+        else if ($(this).scrollTop() > 1700) {
+            $("#brideImage").removeClass("animate__animated animate__fadeInLeft animate__slower 2s");
+            $("#wifeImage").removeClass("animate__animated animate__fadeInRight animate__slower 2s");
 
-            $("#heartl").addClass("animate__animated animate__fadeInLeft animate__slower 1s");
+            $("#heartl").addClass("animate__animated animate__fadeInLeft animate__slower 1s animate__infinite	infinite");
             $("#heart2").removeClass("animate__animated animate__bounce animate__infinite	infinite");
-            $("#heartr").addClass("animate__animated animate__fadeInRight animate__slower 1s");
+            $("#heartr").addClass("animate__animated animate__fadeInRight animate__slower 1s animate__infinite	infinite");
 
 
         }
