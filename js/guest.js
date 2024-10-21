@@ -16,9 +16,14 @@ export const guest = (() => {
         }
 
         const count = (new Date(until)).getTime();
-
-        setInterval(() => {
-            const distance = Math.abs(count - (new Date()).getTime());
+        console.log(count - (new Date()).getTime())
+        let funcCount = setInterval(() => {
+            const distance = Math.round(count - (new Date()).getTime());
+            if(distance < 1000 ){
+                clearInterval(funcCount);
+            }
+            // console.log(new Date().getTime())
+            // console.log(distance)
 
             document.getElementById('day').innerText = Math.floor(distance / (1000 * 60 * 60 * 24));
             document.getElementById('hour').innerText = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
