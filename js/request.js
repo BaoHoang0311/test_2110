@@ -51,7 +51,7 @@ export const request = (method, path) => {
                     return dto.baseResponse(res.code, res.data, res.error);
                 })
                 .catch((err) => {
-                    alert(err);
+                    // alert(err);
                     throw err;
                 });
         },
@@ -91,7 +91,7 @@ export const request = (method, path) => {
 
                 })
                 .catch((err) => {
-                    alert(err);
+                    // alert(err);
                     throw err;
                 });
         },
